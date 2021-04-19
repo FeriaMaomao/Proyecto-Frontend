@@ -1,0 +1,66 @@
+body,
+html {
+  height: 100%;
+}
+.mytext {
+  font-size: 2rem;
+}
+.mytext2 {
+  font-size: 1rem;
+}
+.myimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mynav {
+  height: 8vh;
+}
+.mymain {
+  background-color: #eee;
+}
+.row {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.margin-table {
+  margin-top: 30px;
+}
+#container {
+  height: 100%;
+}
+#container > .row {
+  height: 100%;
+}
+
+#main-menu {
+  height: 100%;
+}
+.main-menu-hide {
+  display: none;
+}
+#right-content #top-menu i {
+  cursor: pointer;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
