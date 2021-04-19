@@ -26,6 +26,10 @@ body {
     color:rgb(250, 246, 246)
     
   }
+
+  .LogoAndromeda {
+    margin: 0 0 0 20px;
+  }
   
   .b-example-divider {
     width: 1.5rem;
