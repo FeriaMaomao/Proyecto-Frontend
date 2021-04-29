@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  extract ($_REQUEST);
+  if (!isset($_SESSION['user']))
+  header("location:../index.php?x=2");//x=2 significa que no han iniciado sesión
+
+require "../Modelo/conexionBasesDatos.php";
+require "../Controlador/ConsultaReportes.php";
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -154,10 +164,15 @@
         <br>
         <div>
             <form class="form-inline" action="../Controlador/Generar Reporte.php" method="post" >
-               <div class="form-group col-md-2">
+              <div class="form-group col-md-2">
                 <label for="asignado">Usuario: </label>
                   <select id="asignado" name="asignado" class="form-control">
                     <option value="">Seleccione</option>
+                      <?php while ($usuario=$usuarios->fetch_object()) { ?>
+                    <option value="<?php echo $usuario->id_usuarios;?>">
+                      <?php echo $usuario->id_usuarios. " " .$usuario->Nombres. " " .$usuario->Apellidos ?>
+                    </option>
+                      <?php } ?>
                   </select>
               </div>
               <br>
@@ -165,6 +180,11 @@
                  <label for="exampleFormControlSelect1">Estado: </label>
                  <select class="form-control" id="estado" name="estado">
                    <option value="">Seleccione</option>
+                    <?php while ($estac=$estadoactivo->fetch_object()) { ?>
+                   <option value="<?php echo $estac->Estado; ?>">
+                    <?php echo $estac->Estado?>
+                   </option>
+                    <?php } ?>
                   </select>
               </div>
               <br>

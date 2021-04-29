@@ -24,7 +24,7 @@ if ($existe==1)  //quiere decir que los datos estan bien
 	$usuario=$resultado->fetch_object();
 	$_SESSION['user']= $usuario->Login;
 	$_SESSION['rol']= $usuario->Rol;
-	header("location:../Vista/Nosotros.php");
+	header("location:../Vista/nosotros.html");
 }
 
 else
