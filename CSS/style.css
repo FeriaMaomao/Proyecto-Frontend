@@ -38,3 +38,19 @@
     margin: 30px 0px;
 }
 /*Fin Quienes Somos*/
+
+.body-mapa{
+    background-image: url("../Imagenes/logo\ andromeda.PNG");
+}
+.container-mapa-sitio{
+    text-align: center;
+    color:goldenrod;
+}
+h1:hover{
+    background-color: whitesmoke;
+    display: block;
+}
+h2:hover{
+    background-color: whitesmoke;
+}
+
