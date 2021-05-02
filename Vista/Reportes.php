@@ -148,7 +148,7 @@ require "../Controlador/ConsultaReportes.php";
             <div class="collapse" id="account-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li><a href="#" class="link-dark rounded">Mapa del Sitio</a></li>
-                <li><a href="../index.html" class="link-dark rounded">Cerrar Sesion</a></li>
+                <li><a href="salir.php" class="link-dark rounded">Cerrar Sesion</a></li>
               </ul>
             </div>
           </li>
@@ -179,12 +179,9 @@ require "../Controlador/ConsultaReportes.php";
               <div class="form-group col-md-2">
                  <label for="exampleFormControlSelect1">Estado: </label>
                  <select class="form-control" id="estado" name="estado">
-                   <option value="">Seleccione</option>
-                    <?php while ($estac=$estadoactivo->fetch_object()) { ?>
-                   <option value="<?php echo $estac->Estado; ?>">
-                    <?php echo $estac->Estado?>
-                   </option>
-                    <?php } ?>
+                    <option>Seleccione</option>
+                    <option>Activo</option>
+                    <option>Inactivo</option>
                   </select>
               </div>
               <br>
