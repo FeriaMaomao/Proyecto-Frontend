@@ -147,7 +147,7 @@ require "../Controlador/ConsultaReportes.php";
             </button>
             <div class="collapse" id="account-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Mapa del Sitio</a></li>
+                <li><a href="mapa-del-sitio.html" class="link-dark rounded">Mapa del Sitio</a></li>
                 <li><a href="salir.php" class="link-dark rounded">Cerrar Sesion</a></li>
               </ul>
             </div>
