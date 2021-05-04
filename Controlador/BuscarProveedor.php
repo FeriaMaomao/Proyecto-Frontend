@@ -24,8 +24,8 @@ $salida.="<table class='table table-striped'>
         <th>ID Proveedor</th>
         <th>NIT</th>
         <th>Nombre</th>
-        <th>Direccion</th>
-        <th>Telefono</th>
+        <th>Dirección</th>
+        <th>Teléfono</th>
       </tr>
     </thead>
     <tbody>";
@@ -40,8 +40,8 @@ $salida.="<tr>
         <td>".$fila['Direccion']."</td>
         <td>".$fila['Telefono']."</td> ";
         if($_SESSION['rol']==1) {
-       $salida.= "<td><button title='Eliminar' type='button' name='eliminar' class='btn btn-primary' onclick='EliminarProveedor(".$fila['id_Proveedor'].")'><span class='icon-remove-user'></span></button></td>
-        <td><button title='Actualizar' type='button' name='actualizar' class='btn btn-primary' onclick='ModificarProveedor(".$fila['id_Proveedor'].")'><span class='icon-shuffle'></span></button></td>
+       $salida.= "<td><button title='Eliminar' style='width: 80%' type='button' name='eliminar' class='btn btn-danger' onclick='EliminarProveedor(".$fila['id_Proveedor'].")'><i class='fa fa-trash'></i></button></td>
+        <td><button style='width: 80%' title='Actualizar' type='button' name='actualizar' class='btn btn-primary' onclick='ModificarProveedor(".$fila['id_Proveedor'].")'><i class='fa fa-edit'></i></button></td>
         </tr>"; }
     
 

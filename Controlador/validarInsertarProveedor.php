@@ -14,10 +14,10 @@ $resultado = $objUsuario->agregarProveedor();
 
 if ($resultado){
 
-	header ("location:../Vista/listaProveedor.php?&msj=1");
+	header ("location:../Vista/proveedor.php?&msj=1");
 }
 else{
 
-	header ("location:../Vista/listaProveedor.php?&msj=2");
+	header ("location:../Vista/proveedor.php?&msj=2");
 }
 ?>

@@ -15,10 +15,10 @@ $resultado = $objProveedor->ActualizarProveedor();
 
 if ($resultado){
 
-	header ("location:../Vista/listaProveedor.php?&msj=3");
+	header ("location:../Vista/proveedor.php?&msj=3");
 }
 else{
 
-	header ("location:../Vista/listaProveedor.php?&msj=4");
+	header ("location:../Vista/proveedor.php?&msj=4");
 }
 ?>
