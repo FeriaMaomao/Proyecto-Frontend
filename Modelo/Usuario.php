@@ -90,7 +90,7 @@ class Usuario
 		$this->Cargo=$Cargo;
 		$this->Area=$Area;
 		$this->Correo=$Correo;
-		$this->Conexion=$Conexion;
+		
 	}
 		//Funcion para capturar datos del actualizar usuario
 		public function crearUsuario2($idusuario,$Nombres,$Apellidos,$Cedula,$Cargo,$Area,$Correo)
@@ -102,7 +102,7 @@ class Usuario
 		$this->Cargo=$Cargo;
 		$this->Area=$Area;
 		$this->Correo=$Correo;
-		$this->Conexion=$Conexion;
+		
 	}
 
 	public function agregarUsuario()
@@ -137,7 +137,7 @@ values ('$this->Nombres','$this->Apellidos','$this->Cedula','$this->Cargo','$thi
 	public function ActualizarUsuario()
 	{
 		$this->Conexion=Conectarse();
-		$sql="update usuarios set id_usuarios='$this->idusuario',Nombres='$this->Nombres',
+		$sql="update usuarios set Nombres='$this->Nombres',
 		Apellidos='$this->Apellidos',Cedula='$this->Cedula',Cargo='$this->Cargo',Area='$this->Area',
 		Correo='$this->Correo' where usuarios.id_usuarios = '$this->idusuario'";
 		$resultado=$this->Conexion->query($sql);
