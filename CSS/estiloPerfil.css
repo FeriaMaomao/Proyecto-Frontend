@@ -41,7 +41,7 @@ http://work.smarchal.com/twbscolor/
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #000000;
-  background-color: #5bcf82;
+  background-color: #075ba5;
 }
 .navbar-default .navbar-toggle {
   border-color: #337ab7;
@@ -129,7 +129,7 @@ http://work.smarchal.com/twbscolor/
 .item-price {
     font-size: 23px;
     font-weight: bold;
-	color: #388e3c;
+	color: #075ba5;
   
 }
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
@@ -142,4 +142,6 @@ http://work.smarchal.com/twbscolor/
 a {
 	color: #5a5df0;
 }
+
+
 

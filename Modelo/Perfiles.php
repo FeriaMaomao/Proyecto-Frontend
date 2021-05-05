@@ -66,7 +66,7 @@ class Perfil
 		$this->Password=$Password;
 		$this->Rol=$Rol;
 		$this->Estado=$Estado;
-		$this->Conexion=$Conexion;
+		//$this->Conexion=$Conexion;
 	}
 		//Funcion para capturar datos del actualizar usuario
 		public function crearPerfil2($idperfil,$Login,$Password,$Rol,$Estado)
@@ -76,7 +76,7 @@ class Perfil
 		$this->Password=$Password;
 		$this->Rol=$Rol;
 		$this->Estado=$Estado;
-		$this->Conexion=$Conexion;
+		//$this->Conexion=$Conexion;
 	}
 
 	public function agregarPerfil()

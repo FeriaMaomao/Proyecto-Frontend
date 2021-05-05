@@ -13,13 +13,43 @@ $objPerfil->crearPerfil($_REQUEST["Login"],md5($_REQUEST["Password"]),$_REQUEST[
 $resultado = $objPerfil->agregarPerfil();
 
 if ($resultado){
-
-
-	header ("location:../Vista/listaPerfiles.php?&msj=1");
+	$messages[] = "El Perfil se ha registrado correctamente.";
+	
+	if (isset($messages)){
+				
+		?>
+		<div class="alert alert-success" role="alert">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>¡Bien hecho!</strong>
+				<?php
+					foreach ($messages as $message) {
+							echo $message;
+						}
+					?>
+		</div>
+		<?php
+	}
+	
+	
 }
 else{
 
 
-	header ("location:../Vista/listaPerfiles.php?&msj=2");
+		$errors []= "No se logró registrar el perfil.";
+		?>
+		<div class="alert alert-danger" role="alert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Error!</strong> 
+				<?php
+					foreach ($errors as $error) {
+							echo $error;
+						}
+					?>
+		</div>
+		<?php
+
+
 }
+
+
 ?>
