@@ -4,7 +4,7 @@ extract ($_REQUEST);
 if (!isset($_SESSION['user']))
   header("location:../index.php?x=2");//x=2 significa que no han iniciado sesión
 
-$mysqli = new mysqli("localhost","admin","1234567890","andromedadb");
+$mysqli = new mysqli("localhost","root","","andromedadb");
 	
     $salida = "";
 
@@ -18,7 +18,7 @@ $mysqli = new mysqli("localhost","admin","1234567890","andromedadb");
     $resultado = $mysqli->query($query);
 
  if ($resultado->num_rows>0) { 
-$salida.="<table class='table table-striped'>
+$salida.="<table class='table'>
     <thead>
       <tr>
         <th>ID Usuario</th>
@@ -28,6 +28,7 @@ $salida.="<table class='table table-striped'>
         <th>Cargo</th>
         <th>Area</th>
         <th>Correo</th>
+        <th>Eliminar/Editar</th>
       </tr>
     </thead>
     <tbody>";
@@ -44,8 +45,8 @@ $salida.="<tr>
         <td>".$fila['Area']."</td>
         <td>".$fila['Correo']."</td> ";
         if($_SESSION['rol']==1) {
-       $salida.= "<td><button title='Eliminar' type='button' name='eliminar' class='btn btn-primary' onclick='EliminarUsuario(".$fila['id_usuarios'].")'><span class='icon-remove-user'></span></button></td>
-        <td><button title='Actualizar' type='button' name='actualizar' class='btn btn-primary' onclick='Cambiar(".$fila['id_usuarios'].")'><span class='icon-shuffle'></span></button></td>
+       $salida.= "<td><button title='Eliminar' type='button' name='eliminar' class='btn btn-danger' onclick='EliminarUsuario(".$fila['id_usuarios'].")'>Eliminar</button>
+        <button title='Actualizar' type='button' name='actualizar' class='btn btn-info' onclick='Cambiar(".$fila['id_usuarios'].")'>Editar</button></td>
         </tr>"; }
     
 

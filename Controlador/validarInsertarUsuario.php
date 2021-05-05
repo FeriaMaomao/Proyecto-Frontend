@@ -15,11 +15,11 @@ $resultado = $objUsuario->agregarUsuario();
 
 if ($resultado){
 
-	header ("location:../Vista/listaUsuarios.php?&msj=1");
+	header ("location:../Vista/RegistroUsuario.php?&msj=1");
 }
 else{
 
-	header ("location:../Vista/listaUsuarios.php?&msj=2");
+	header ("location:../Vista/RegistroUsuario.php?&msj=2");
 }
 ?>
 

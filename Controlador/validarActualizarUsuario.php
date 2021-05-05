@@ -9,11 +9,11 @@ $objConexion=Conectarse();
 $objUsuario= new Usuario();
 
 $objUsuario->crearUsuario2($_REQUEST["idusuario"],$_REQUEST["Nombres"],$_REQUEST["Apellidos"],$_REQUEST["Cedula"],$_REQUEST["Cargo"],
-$_REQUEST["Area"],$_REQUEST["Correo"],$_REQUEST["Contraseña"]);
+$_REQUEST["Area"],$_REQUEST["Correo"]);
 
 $resultado = $objUsuario->ActualizarUsuario();
 if ($resultado)
-	header ("location:../Vista/listaUsuarios.php?&msj=3");
+	header ("location:../Vista/RegistroUsuario.php?&msj=3");
 else
-	header ("location:../Vista/listaUsuarios.php?&msj=4");
+	header ("location:../Vista/RegistroUsuario.php?&msj=4");
 ?>
