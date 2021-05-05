@@ -58,18 +58,18 @@ function EliminarUsuario(codigoeliminar)
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="usuarios.html">Usuarios</a>
+          <a class="nav-link active" aria-current="page" href="../Vista/RegistroUsuario.php">Usuarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="" tabindex="-1" aria-disabled="true">Inventario</a>
+          <a class="nav-link active" href="../Vista/listaInventario.php" tabindex="-1" aria-disabled="true">Inventario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="proveedor.html" tabindex="-1" aria-disabled="true">Proveedores</a>
+          <a class="nav-link active" href="../Vista/proveedor.php" tabindex="-1" aria-disabled="true">Proveedores</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="Perfiles.html" tabindex="-1" aria-disabled="true">Perfiles</a>
+          <a class="nav-link active" href="../Vista/listaPerfiles.php" tabindex="-1" aria-disabled="true">Perfiles</a>
         <li class="nav-item">
-          <a class="nav-link active" href="Reportes.html" tabindex="-1" aria-disabled="true">Reportes</a>
+          <a class="nav-link active" href="../Vista/reportes.php" tabindex="-1" aria-disabled="true">Reportes</a>
         </li>
       </ul>
     </div>

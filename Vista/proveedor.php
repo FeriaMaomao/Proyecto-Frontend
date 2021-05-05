@@ -45,19 +45,19 @@ if (!isset($_REQUEST['msj'])){
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Usuarios</a>
+                        <a class="nav-link" href="../Vista/RegistroUsuario.php">Usuarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listaInventario.html">Inventario</a>
+                        <a class="nav-link" href="../Vista/listaInventario.php">Inventario</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="proveedor.php">Proveedor</a>
+                        <a class="nav-link" href="../Vista/proveedor.php">Proveedor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Reportes.php">Reporte</a>
+                        <a class="nav-link" href="../Vista/reportes.php">Reporte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Perfiles.html">Perfiles</a>
+                        <a class="nav-link" href="../Vista/listaPerfiles.php">Perfiles</a>
                     </li>
                 </ul>
                 <div id="btn-menu" class="pull-right collapse navbar-collapse justify-content-end">

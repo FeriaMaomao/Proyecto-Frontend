@@ -40,13 +40,13 @@ if (!isset($_REQUEST['msj'])){
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="../Vista/Nosotros.php"><span class="icon-home" style="color:#FFFFFF"></span> Andromeda Inventory</a>
+      <a class="navbar-brand" href="../Vista/nosotros.html"><span class="icon-home" style="color:#FFFFFF"></span> Andromeda Inventory</a>
       <img alt="Brand" src="../Imagenes/Logo Andromeda Inventory.jpeg">
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="../Vista/listaUsuarios.php"><span class="icon-users" style="color:#FFFFFF"></span> Usuarios</a></li>
+      <li><a href="../Vista/RegistroUsuario.php"><span class="icon-users" style="color:#FFFFFF"></span> Usuarios</a></li>
       <li><a href="../Vista/listaInventario.php"><span class="icon-laptop" style="color:#FFFFFF"></span> Inventario</a></li>
-      <li><a href="../Vista/listaProveedor.php"><span class="icon-man" style="color:#FFFFFF"></span> Proveedor</a></li>
+      <li><a href="../Vista/proveedor.php"><span class="icon-man" style="color:#FFFFFF"></span> Proveedor</a></li>
       <li><a href="../Vista/reportes.php"><span class="icon-text-document" style="color:#FFFFFF"></span> Reporte</a></li>
       <?php if($_SESSION['rol']==1) { ?>
       <li><a href="../Vista/listaPerfiles.php"><span class="icon-login" style="color:#FFFFFF"></span> Perfiles</a></li>

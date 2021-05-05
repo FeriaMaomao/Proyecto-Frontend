@@ -91,8 +91,8 @@ require "../Controlador/ConsultaReportes.php";
             </button>
             <div class="collapse show" id="user-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Listar</a></li>
-                <li><a href="#" class="link-dark rounded">Crear</a></li>
+                <li><a href="../Vista/RegistroUsuario.php" class="link-dark rounded">Listar</a></li>
+                <li><a href="../Vista/RegistroUsuario.php" class="link-dark rounded">Crear</a></li>
               </ul>
             </div>
           </li>
@@ -102,8 +102,8 @@ require "../Controlador/ConsultaReportes.php";
             </button>
             <div class="collapse" id="asset-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Listar</a></li>
-                <li><a href="#" class="link-dark rounded">Crear</a></li>
+                <li><a href="../Vista/listaInventario.php" class="link-dark rounded">Listar</a></li>
+                <li><a href="../Vista/RegistrodeInventario.php" class="link-dark rounded">Crear</a></li>
               </ul>
             </div>
           </li>
@@ -113,8 +113,8 @@ require "../Controlador/ConsultaReportes.php";
               </button>
               <div class="collapse" id="providers-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="../Vista/proveedor.html" class="link-dark rounded">Listar</a></li>
-                  <li><a href="#" class="link-dark rounded">Crear</a></li>
+                  <li><a href="../Vista/proveedor.php" class="link-dark rounded">Listar</a></li>
+                  <li><a href="../Vista/proveedor.php" class="link-dark rounded">Crear</a></li>
                 </ul>
               </div>
             </li>
@@ -124,8 +124,8 @@ require "../Controlador/ConsultaReportes.php";
             </button>
             <div class="collapse" id="profiles-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Listar</a></li>
-                <li><a href="#" class="link-dark rounded">Crear</a></li>
+                <li><a href="../Vista/listaPerfiles.php" class="link-dark rounded">Listar</a></li>
+                <li><a href="../Vista/listaPerfiles.php" class="link-dark rounded">Crear</a></li>
               </ul>
             </div>
           </li>

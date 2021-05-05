@@ -39,9 +39,9 @@ if(!isset($_REQUEST['msj'])){
         <span class="icon-bar"></span>
       </button>
       <div>
-            <a class="navbar-brand" href="../Vista/Nosotros.php"> <i class='glyphicon glyphicon-home'> </i> </a>
+            <a class="navbar-brand" href="../Vista/nosotros.html"> <i class='glyphicon glyphicon-home'> </i> </a>
 
-            <a href="../Vista/Nosotros.php"> <img alt="Brand" src="../Imagenes/logo_andromeda_reduc.PNG"></a>
+            <a href="../Vista/nosotros.html"> <img alt="Brand" src="../Imagenes/logo_andromeda_reduc.PNG"></a>
       </div>
 
     </div>
@@ -49,13 +49,13 @@ if(!isset($_REQUEST['msj'])){
   
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li class=""><a href="../Vista/listaUsuarios.php"><i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
+          <li class=""><a href="../Vista/RegistroUsuario.php"><i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
           <li class=""><a href="../Vista/listaInventario.php"><i class='glyphicon glyphicon-tags'></i> Inventario</a></li>
-          <li class=""><a href="../Vista/listaProveedor.php"><i  class='glyphicon glyphicon-lock'></i> Proveedores</a></li>
+          <li class=""><a href="../Vista/proveedor.php"><i  class='glyphicon glyphicon-lock'></i> Proveedores</a></li>
           <li class=""><a href="../Vista/reportes.php"><i  class='glyphicon glyphicon-file'></i> Reportes</a></li>
           <?php if($_SESSION['rol']==1) { ?>
 
-            <li class=""><a href="../Vista/Perfiles.html"><i  class='glyphicon glyphicon-cog'></i> Perfiles</a></li>
+            <li class=""><a href="../Vista/listaPerfiles.php"><i  class='glyphicon glyphicon-cog'></i> Perfiles</a></li>
 
           <?php } ?>
 
